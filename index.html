@@ -35,7 +35,10 @@
      </head>
      <body>
           <header>
-               <nav class="bg-white shadow-md sticky top-0">
+               <nav
+                    style="z-index: 1000"
+                    class="bg-white shadow-md sticky top-0"
+               >
                     <div class="container mx-auto px-4">
                          <div class="flex justify-between items-center py-1">
                               <div class="flex-shrink-0">
@@ -90,8 +93,52 @@
                          </div>
                     </div>
                </nav>
-               <!--  this is a test that the headline fonts work -->
-               <section class="font-headline">hero sophia</section>
+               <!-- this is a first attempt on the hero section /Sofia -->
+               <section>
+                    <div
+                         class="relative w-full h-screen flex items-center justify-center"
+                    >
+                         <div
+                              class="absolute w-180 h-96 left-[100px] top-[193px] bg-cyan-500 p-8 hidden md:block"
+                         >
+                              <h1
+                                   class="text-5xl font-bold font-headline text-white"
+                              >
+                                   The Pineapple Island
+                              </h1>
+                              <p class="text-2xl font-body text-white mt-4">
+                                   The island where all the pineapples you ever
+                                   dreamed of come true
+                              </p>
+                         </div>
+                         <div
+                              class="absolute p-4 text-center md:hidden"
+                              style="
+                                   top: 50%;
+                                   left: 50%;
+                                   transform: translate(-50%, -50%);
+                              "
+                         >
+                              <h1
+                                   class="text-3xl font-bold font-headline text-white"
+                              >
+                                   The Pineapple Island
+                              </h1>
+                              <p class="text-lg font-body text-white mt-4">
+                                   The island where all the pineapples you ever
+                                   dreamed of come true
+                              </p>
+                         </div>
+                         <div class="absolute left-80 right-52"></div>
+                         <img
+                              src="images/hero-pic.jpg"
+                              alt="picture of
+                         pineapple on a rock with the sea and sky in the
+                         background"
+                              class="object-cover w-9/12 h-full inset-0 z-[-1]"
+                         />
+                    </div>
+               </section>
           </header>
           <main>
                <section>about us Lukas</section>
