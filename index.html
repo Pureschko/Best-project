@@ -7,6 +7,30 @@
                content="width=device-width, initial-scale=1.0"
           />
           <script src="https://cdn.tailwindcss.com"></script>
+          <link
+               href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+               rel="stylesheet"
+          />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+               rel="stylesheet"
+          />
+          <script>
+               tailwind.config = {
+                    theme: {
+                         extend: {
+                              fontFamily: {
+                                   headline: ["Playfair Display", "serif"],
+                                   body: ["Lato", "sans-serif"],
+                              },
+                              colors: {
+                                   primary: "#06b6d4",
+                                   secondary: "#db2777",
+                              },
+                         },
+                    },
+               };
+          </script>
           <title>Pineapple</title>
      </head>
      <body>
@@ -67,17 +91,20 @@
                     </div>
                </nav>
 
-               <section>hero sophia</section>
+               <section class="font-headline">hero sophia</section>
           </header>
           <main>
                <section>about us Lukas</section>
                <section>why choose us Inna</section>
-               <section>What is offered Lukas</section>
+               <!-- this is a test that the secondary colour works and that the fonts for p work-->
+               <section class="bg-secondary font-body">
+                    What is offered Lukas
+               </section>
                <section>Gallery Sophia</section>
                <section>Form Inna</section>
                <section>Become agent Inna</section>
           </main>
-
-          <footer>Inna</footer>
+          <!-- this is a test that the background color works -->
+          <footer class="bg-primary">Inna</footer>
      </body>
 </html>
