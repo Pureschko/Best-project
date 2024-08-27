@@ -32,8 +32,7 @@
                };
           </script>
           <title>Pineapple</title>
-          <link rel="stylesheet" href="style.css"/>
-
+          <link rel="stylesheet" href="style.css" />
      </head>
      <body>
           <header>
@@ -95,13 +94,13 @@
                          </div>
                     </div>
                </nav>
-               <!-- this is a first attempt on the hero section /Sofia -->
+               <!-- this is the hero section  with the triangle clip and the overlaying cyan rectangle which disappears on small screens to make it responsive /Sofia -->
                <section>
                     <div
                          class="relative w-full h-screen flex items-center justify-center"
                     >
                          <div
-                              class="absolute w-180 h-96 left-[100px] top-[193px] bg-cyan-500 p-8 hidden md:block"
+                              class="absolute w-140 h-96 left-[100px] top-[100px] bg-cyan-500 p-8 hidden md:block"
                          >
                               <h1
                                    class="text-5xl font-bold font-headline text-white"
@@ -122,11 +121,11 @@
                               "
                          >
                               <h1
-                                   class="text-3xl font-bold font-headline text-white"
+                                   class="text-3xl font-bold font-headline text-primary"
                               >
                                    The Pineapple Island
                               </h1>
-                              <p class="text-lg font-body text-white mt-4">
+                              <p class="text-lg font-body text-secondary mt-4">
                                    The island where all the pineapples you ever
                                    dreamed of come true
                               </p>
@@ -137,7 +136,7 @@
                               alt="picture of
                          pineapple on a rock with the sea and sky in the
                          background"
-                              class="object-cover w-9/12 h-full inset-0 z-[-1]"
+                              class="object-cover w-9/12 h-full inset-0 z-[-1] clip-path-choose"
                          />
                     </div>
                </section>
@@ -145,55 +144,127 @@
           <main>
                <section>about us Lukas</section>
 
-                <!-- Why choose Pineapple Island -->
-                <section class="relative py-16 px-4 md:px-8 lg:px-auto flex flex-col md:flex-col lg:flex-row items-center lg:items-start">
-                    <div class="absolute inset-0 bg-cyan-500 clip-path-choose"></div>
-                    <h2 class="font-serif font-medium text-3xl md:text-4xl lg:text-5xl leading-tight text-white my-8 md:my-4 lg:my-28 mr-10 ml-10 z-10 text-center md:text-center lg:text-left">
-                      Why<br class="hidden lg:block">Choose<br class="hidden lg:block">Pineapple<br class="hidden lg:block">Island
+               <!-- Why choose Pineapple Island -->
+               <section
+                    class="relative py-16 px-4 md:px-8 lg:px-auto flex flex-col md:flex-col lg:flex-row items-center lg:items-start"
+               >
+                    <div
+                         class="absolute inset-0 bg-cyan-500 clip-path-choose"
+                    ></div>
+                    <h2
+                         class="font-serif font-medium text-3xl md:text-4xl lg:text-5xl leading-tight text-white my-8 md:my-4 lg:my-28 mr-10 ml-10 z-10 text-center md:text-center lg:text-left"
+                    >
+                         Why<br class="hidden lg:block" />Choose<br
+                              class="hidden lg:block"
+                         />Pineapple<br class="hidden lg:block" />Island
                     </h2>
-                    <div class="relative z-10 w-full md:w-full lg:w-8/12 bg-white shadow-lg overflow-hidden flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start">
-                      <div class="bg-white text-black font-sans font-extralight w-full md:w-full lg:w-1/3 p-4 md:p-8 lg:p-12">
-                        <p class="text-base md:text-lg mx-auto text-center md:text-center lg:text-left">
-                          Pineapple Island is the most sought-after community in Ibadan that values and puts the needs of their clients first. 
-                          It is a territory with loft complexes that creates a country life and homely feeling that is integrated with industrial 
-                          development. A perfect, professional built abode that gives you the true taste of beauty and happiness.
-                        </p>
-                      </div>
-                      <div class="w-full md:w-full lg:w-2/3 mt-4 md:mt-4 lg:mt-0">
-                          <img src="images/Why_choose_pineapple_island_pic.png" alt="Pineapple" class="w-full h-full object-cover">
-                        </div>
-                      </div>
-                  </section>
-                  <section class="p-5">
-                    <h2 class="text-[#0e204e] text-3xl font-bold font-[playfair] text-center mb-6">Pineapple Island Offers</h2>
-                      <img class="w-335 h-387" src="https://picsum.photos/500" alt="">
-                    <div id="icon-grid" class="bg-[#0e204e] grid grid-cols-3 gap-x-6 gap-y-12 px-6 py-8 mx-5 -mt-14 drop-shadow-lg">
-                      <div class="text-center">
-                        <img class="h-8 w-8 inline mb-2" src="images/icons8-leaf-50.png" alt="">
-                        <p class="text-white text-xs font-[poppins]">Eco Friendly</p>
-                      </div>
-                      <div class="text-center">
-                        <img class="h-8 w-8 inline mb-2" src="images/icons8-wi-fi-50.png" alt="">
-                        <p class="text-white text-xs font-[poppins]">Smart Homes</p>
-                      </div>
-                      <div class="text-center">
-                        <img class="h-8 w-8 inline mb-2" src="images/icons8-average-price-50.png" alt="">
-                        <p class="text-white text-xs font-[poppins]">Good Rates</p>
-                      </div>
-                      <div class="text-center">
-                        <img class="h-8 w-8 inline mb-2" src="images/icons8-services-50.png" alt="">
-                        <p class="text-white text-xs font-[poppins]">Serviced Apartment</p>
-                      </div>
-                      <div class="text-center">
-                        <img class="h-8 w-8 inline mb-2" src="images/icons8-security-lock-50.png" alt="">
-                        <p class="text-white text-xs font-[poppins]">Private Security</p>
-                      </div>
-                      <div class="text-center">
-                        <img class="h-8 w-8 inline mb-2" src="images/icons8-idea-50.png" alt="">
-                        <p class="text-white text-xs font-[poppins]">24/7 Electricity</p>
-                      </div>
+                    <div
+                         class="relative z-10 w-full md:w-full lg:w-8/12 bg-white shadow-lg overflow-hidden flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start"
+                    >
+                         <div
+                              class="bg-white text-black font-sans font-extralight w-full md:w-full lg:w-1/3 p-4 md:p-8 lg:p-12"
+                         >
+                              <p
+                                   class="text-base md:text-lg mx-auto text-center md:text-center lg:text-left"
+                              >
+                                   Pineapple Island is the most sought-after
+                                   community in Ibadan that values and puts the
+                                   needs of their clients first. It is a
+                                   territory with loft complexes that creates a
+                                   country life and homely feeling that is
+                                   integrated with industrial development. A
+                                   perfect, professional built abode that gives
+                                   you the true taste of beauty and happiness.
+                              </p>
+                         </div>
+                         <div
+                              class="w-full md:w-full lg:w-2/3 mt-4 md:mt-4 lg:mt-0"
+                         >
+                              <img
+                                   src="images/Why_choose_pineapple_island_pic.png"
+                                   alt="Pineapple"
+                                   class="w-full h-full object-cover"
+                              />
+                         </div>
                     </div>
-                  </section>
+               </section>
+               <section class="p-5">
+                    <h2
+                         class="text-[#0e204e] text-3xl font-bold font-[playfair] text-center mb-6"
+                    >
+                         Pineapple Island Offers
+                    </h2>
+                    <img
+                         class="w-335 h-387"
+                         src="https://picsum.photos/500"
+                         alt=""
+                    />
+                    <div
+                         id="icon-grid"
+                         class="bg-[#0e204e] grid grid-cols-3 gap-x-6 gap-y-12 px-6 py-8 mx-5 -mt-14 drop-shadow-lg"
+                    >
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-leaf-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Eco Friendly
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-wi-fi-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Smart Homes
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-average-price-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Good Rates
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-services-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Serviced Apartment
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-security-lock-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Private Security
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-idea-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   24/7 Electricity
+                              </p>
+                         </div>
+                    </div>
+               </section>
                <section>why choose us Inna</section>
 
                <!-- this is a test that the secondary colour works and that the fonts for p work-->
