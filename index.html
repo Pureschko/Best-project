@@ -32,14 +32,16 @@
                };
           </script>
           <title>Pineapple</title>
-          <link rel="stylesheet" href="style.css"/>
-
+          <link rel="stylesheet" href="style.css" />
      </head>
      <body>
           <header>
-               <nav class="bg-white shadow-md sticky top-0">
+               <nav
+                    style="z-index: 1000"
+                    class="bg-white shadow-md sticky top-0"
+               >
                     <div class="container mx-auto px-4">
-                         <div class="flex justify-between items-center py-1">
+                         <div class="flex justify-between items-center py-px">
                               <div class="flex-shrink-0">
                                    <img
                                         src="images/logo2-png.png"
@@ -51,40 +53,40 @@
                               <div class="hidden md:flex space-x-6">
                                    <a
                                         href="#"
-                                        class="text-blue-800 hover:text-gray-800"
+                                        class="text-primary hover:text-secondary"
                                         >About us</a
                                    >
                                    <a
                                         href="#"
-                                        class="text-blue-800 hover:text-gray-800"
+                                        class="text-primary hover:text-secondary"
                                         >What we do</a
                                    >
                                    <a
                                         href="#"
-                                        class="text-blue-800 hover:text-gray-800"
+                                        class="text-primary hover:text-secondary"
                                         >Project</a
                                    >
                               </div>
                               <div class="hidden md:flex">
                                    <a
                                         href="#_"
-                                        class="relative inline-block text-lg group"
+                                        class="relative inline-block text-base font-body group"
                                    >
                                         <span
-                                             class="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-blue-800 transition-colors duration-1000 ease-out border-2 border-blue-900 rounded-lg group-hover:text-white"
+                                             class="relative z-10 block px-4 py-2 overflow-hidden font-medium leading-tight text-primary transition-colors duration-300 ease-out border-2 border-primary rounded-lg group-hover:text-white"
                                         >
                                              <span
-                                                  class="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"
+                                                  class="absolute inset-0 w-full h-full px-4 py-2 rounded-lg bg-gray-50"
                                              ></span>
                                              <span
-                                                  class="absolute left-0 w-48 h-48 -ml-2 transition-all duration-1000 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-blue-900 group-hover:-rotate-180 ease"
+                                                  class="absolute left-0 w-36 h-36 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-primary group-hover:bg-secondary group-hover:-rotate-180 ease"
                                              ></span>
                                              <span class="relative"
                                                   >Get in touch</span
                                              >
                                         </span>
                                         <span
-                                             class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-1000 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                                             class="absolute bottom-0 right-0 w-full h-10 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-primary rounded-lg group-hover:mb-0 group-hover:mr-0"
                                              data-rounded="rounded-lg"
                                         ></span>
                                    </a>
@@ -92,8 +94,52 @@
                          </div>
                     </div>
                </nav>
-               <!--  this is a test that the headline fonts work -->
-               <section class="font-headline">hero sophia</section>
+               <!-- this is the hero section  with the triangle clip and the overlaying cyan rectangle which disappears on small screens to make it responsive /Sofia -->
+               <section>
+                    <div
+                         class="relative w-full h-screen flex items-center justify-center"
+                    >
+                         <div
+                              class="absolute w-140 h-96 left-[100px] top-[100px] bg-cyan-500 p-8 hidden md:block"
+                         >
+                              <h1
+                                   class="text-5xl font-bold font-headline text-white"
+                              >
+                                   The Pineapple Island
+                              </h1>
+                              <p class="text-2xl font-body text-white mt-4">
+                                   The island where all the pineapples you ever
+                                   dreamed of come true
+                              </p>
+                         </div>
+                         <div
+                              class="absolute p-4 text-center md:hidden"
+                              style="
+                                   top: 50%;
+                                   left: 50%;
+                                   transform: translate(-50%, -50%);
+                              "
+                         >
+                              <h1
+                                   class="text-3xl font-bold font-headline text-primary"
+                              >
+                                   The Pineapple Island
+                              </h1>
+                              <p class="text-lg font-body text-secondary mt-4">
+                                   The island where all the pineapples you ever
+                                   dreamed of come true
+                              </p>
+                         </div>
+                         <div class="absolute left-80 right-52"></div>
+                         <img
+                              src="images/hero-pic.jpg"
+                              alt="picture of
+                         pineapple on a rock with the sea and sky in the
+                         background"
+                              class="object-cover w-9/12 h-full inset-0 z-[-1] clip-path-choose"
+                         />
+                    </div>
+               </section>
           </header>
           <main>
                <section>about us Lukas</section>
@@ -122,6 +168,127 @@
 
 
                <section>What is offered Lukas</section>
+               <!-- Why choose Pineapple Island -->
+               <section
+                    class="relative py-16 px-4 md:px-8 lg:px-auto flex flex-col md:flex-col lg:flex-row items-center lg:items-start"
+               >
+                    <div
+                         class="absolute inset-0 bg-cyan-500 clip-path-choose"
+                    ></div>
+                    <h2
+                         class="font-serif font-medium text-3xl md:text-4xl lg:text-5xl leading-tight text-white my-8 md:my-4 lg:my-28 mr-10 ml-10 z-10 text-center md:text-center lg:text-left"
+                    >
+                         Why<br class="hidden lg:block" />Choose<br
+                              class="hidden lg:block"
+                         />Pineapple<br class="hidden lg:block" />Island
+                    </h2>
+                    <div
+                         class="relative z-10 w-full md:w-full lg:w-8/12 bg-white shadow-lg overflow-hidden flex flex-col md:flex-col lg:flex-row items-center md:items-center lg:items-start"
+                    >
+                         <div
+                              class="bg-white text-black font-sans font-extralight w-full md:w-full lg:w-1/3 p-4 md:p-8 lg:p-12"
+                         >
+                              <p
+                                   class="text-base md:text-lg mx-auto text-center md:text-center lg:text-left"
+                              >
+                                   Pineapple Island is the most sought-after
+                                   community in Ibadan that values and puts the
+                                   needs of their clients first. It is a
+                                   territory with loft complexes that creates a
+                                   country life and homely feeling that is
+                                   integrated with industrial development. A
+                                   perfect, professional built abode that gives
+                                   you the true taste of beauty and happiness.
+                              </p>
+                         </div>
+                         <div
+                              class="w-full md:w-full lg:w-2/3 mt-4 md:mt-4 lg:mt-0"
+                         >
+                              <img
+                                   src="images/Why_choose_pineapple_island_pic.png"
+                                   alt="Pineapple"
+                                   class="w-full h-full object-cover"
+                              />
+                         </div>
+                    </div>
+               </section>
+               <section class="p-5">
+                    <h2
+                         class="text-[#0e204e] text-3xl font-bold font-[playfair] text-center mb-6"
+                    >
+                         Pineapple Island Offers
+                    </h2>
+                    <img
+                         class="w-335 h-387"
+                         src="https://picsum.photos/500"
+                         alt=""
+                    />
+                    <div
+                         id="icon-grid"
+                         class="bg-[#0e204e] grid grid-cols-3 gap-x-6 gap-y-12 px-6 py-8 mx-5 -mt-14 drop-shadow-lg"
+                    >
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-leaf-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Eco Friendly
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-wi-fi-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Smart Homes
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-average-price-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Good Rates
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-services-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Serviced Apartment
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-security-lock-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   Private Security
+                              </p>
+                         </div>
+                         <div class="text-center">
+                              <img
+                                   class="h-8 w-8 inline mb-2"
+                                   src="images/icons8-idea-50.png"
+                                   alt=""
+                              />
+                              <p class="text-white text-xs font-[poppins]">
+                                   24/7 Electricity
+                              </p>
+                         </div>
+                    </div>
+               </section>
                <section>why choose us Inna</section>
 
                <!-- this is a test that the secondary colour works and that the fonts for p work-->
@@ -159,6 +326,66 @@
                     </section>
 
 
+               <section>
+                    <!-- Gallery Sophia -->
+                    <h2
+                         class="font-headline text-2xl font-bold text-primary text-center mb-3"
+                    >
+                         Take a peak!
+                    </h2>
+                    <p class="text-xl font-body text-center text-primary">
+                         Pictures of the one and only Pineapple Island!
+                    </p>
+                    <div class="grid grid-cols-3 gap-4 px-7 w-full h-48">
+                         <img
+                              src="images/gal-pic1-arijana-rosa-wZ_-zfIBH4M-unsplash.jpg"
+                              alt="exotic island seafront with a hand in focus holding a pineapple"
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic2-denys-nevozhai-guNIjIuUcgY-unsplash.jpg"
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic3-james-wheeler-0vysUcbfYx4-unsplash.jpg"
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic4-pineapple-supply-co-QOTq7c9luvs-unsplash.jpg"
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic5-pineapple-supply-co-crIXKhUDpBI-unsplash.jpg"
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic6-zunnoon-ahmed-06Fc_R9hA8w-unsplash.jpg"
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic7-daniel-lugardo-D9Pjp7Xb3TU-unsplash.jpg "
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic8-kit-suman-vpHdJ4E5Wiw-unsplash.jpg"
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                         <img
+                              src="images/gal-pic9-pineapple-supply-co-SXGV5OhlGpM-unsplash.jpg"
+                              alt=""
+                              class="w-full h-48 aspect-w-1 aspect-h-1 max-w-md object-cover"
+                         />
+                    </div>
+               </section>
+
+               <section>Form Inna</section>
                <section>Become agent Inna</section>
           </main>
 
