@@ -117,7 +117,7 @@
                          class="relative w-full h-screen flex items-center justify-center"
                     >
                          <div
-                              class="absolute w-140 h-96 left-[100px] top-[100px] bg-cyan-500 p-8 hidden md:block effect"
+                              class="absolute w-140 h-96 left-[100px] top-[100px] p-8 hidden md:block effect"
                          >
                               <h1
                                    class="text-5xl font-bold font-headline text-white"
@@ -243,20 +243,30 @@
                          </div>
                     </div>
                </section>
-
-               <section>What is offered Lukas</section>
-
                <section class="p-5">
                     <h2
                          class="text-[#0e204e] text-3xl font-bold font-[playfair] text-center mb-6"
                     >
                          Pineapple Island Offers
                     </h2>
+                    <div class="gap-4 flex justify-center">
                     <img
                          class="w-335 h-387"
                          src="https://picsum.photos/500"
                          alt=""
                     />
+                    <img
+                    class="hidden md:visible md:flex w-335 h-387"
+                    src="https://picsum.photos/500"
+                    alt=""
+                    />
+                    <img
+                    class="hidden lg:visible lg:flex w-335 h-387"
+                    src="https://picsum.photos/500"
+                    alt=""
+                    />
+                    </div>
+               </div>
                     <div
                          id="icon-grid"
                          class="bg-primary grid grid-cols-3 gap-x-6 gap-y-12 px-6 py-8 mx-5 -mt-14 drop-shadow-lg"
@@ -326,9 +336,9 @@
                <!--section>why choose us Inna</section-->
 
                <!-- this is a test that the secondary colour works and that the fonts for p work-->
-               <section class="bg-secondary font-body">
+               <!-- <section class="bg-secondary font-body">
                     What is offered Lukas
-               </section>
+               </section> -->
                
                <section>
                     <!-- Gallery Sophia -->
