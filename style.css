@@ -6,4 +6,9 @@
   .clip-path-choose {
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 50% 75%, 0% 85%);
   }
+
+  .clip-path-footer {
+    clip-path: polygon(0 0, 30% 10%, 100% 0, 100% 100%, 0% 100%);
+
+  }
 }
